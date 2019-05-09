@@ -6,6 +6,8 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+
+
 module Nomster
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
@@ -21,6 +23,6 @@ module Nomster
 
     # Precompile additional assets
     config.assets.precompile += %w( .svg .eot .woff .ttf)
-    
+
   end
 end
