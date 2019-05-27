@@ -30,6 +30,14 @@ class PlacesController < ApplicationController
   redirect_to root_path
   end
 
+  def destroy  
+    puts "WE ARE GETTING INOT THE DESTROY FUNCITONS================================================================================"
+    puts (params[:id])
+    @place = Place.find(params[:id])
+    @place.destroy
+    redirect_to root_path
+  end
+
   private
 
   def place_params
