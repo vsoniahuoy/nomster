@@ -9,9 +9,8 @@
     <% if place.user.present? %>
       <small><%= place.user.email %></small>
     <% end %>
-
   </div>
 <% end %> 
 
 
-<%= will_paginate @places, previous_label: h("<"), next_label: h(">") %>
+<%= will_paginate @place, previous_label: h("<"), next_label: h(">") %>
