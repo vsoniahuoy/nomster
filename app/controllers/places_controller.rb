@@ -50,7 +50,7 @@ end
     if @place.user != current_user
       return redner plain: 'Not Allowed', status: :forbidden
     end
-
+puts "your in the distroy function in the the contorller"
     @place.destroy
     redirect_to root_path
   end
