@@ -4,7 +4,7 @@
   <br/><br/>
   <p><%= @place.description %></p>
 
-  <% if @place.latitude.present? && @place.longtitude.present? %>
+  <% if @place.latitude.present? && @place.longitude.present? %>
 
   <script>
 
@@ -25,7 +25,7 @@
   </script>
 
   <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASuZWDKn0OJIp6AUG1zK4qdGw5NGIWG00&callback=initMap">
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnryWQVDywk34Mhl-OOsMGeZYEuQHRNt0&callback=initMap">
   </script>
 
   <div id="map"></div>
