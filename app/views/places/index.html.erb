@@ -20,9 +20,9 @@
         <small><%= place.comments.last.user.email %></small>
       </blockquote>
     </div> 
-  </div>
   <% end %>
-<% end %> 
+  </div>
+<% end %>
 
 
 <%= will_paginate @place, previous_label: h("<"), next_label: h(">") %>
