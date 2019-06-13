@@ -44,6 +44,15 @@
 </div>
 
 
+
+<div class="clear"></div>
+<%= simple_form_for @photo, url: '#' do |f| %>
+  <%= f.input :caption %>
+  <%= f.submit "Upload photos", class: 'btn btn-primary' %>
+<% end %>
+
+
+
 <div class="clear"></div> 
  
 <br/>
@@ -97,3 +106,7 @@
     </div>
   <% end %>
 </div>
+
+
+
+
