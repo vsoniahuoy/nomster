@@ -24,9 +24,8 @@
 
   <% if place.photos.present? %>
     <div class="col-10 offset-1">
-     
-      <%= place.photos.last.picture %>
-  <% end %>    
+     <%= image_tag place.photos.last.picture.url %>
+       <% end %>
     </div>
   </div>
 <% end %>
