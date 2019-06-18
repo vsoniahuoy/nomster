@@ -12,8 +12,6 @@
 # end
 
  CarrierWave.configure do |config|
-  config.fog_public = false 
-
   config.fog_provider = 'fog/aws'                        # required
   config.fog_credentials = {
     provider:              'AWS',                        # required
